@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    /* Variables */
+    --tittle: 1.75rem;
+    --subtittle: 1.25rem;
+    --text: 1rem;
+    --smalltext: 0.75rem;
+
+    /* Colors */
+    --background-color: #EAEAEA;
+    --background-recipe: #FFFFFF;
+    --text-color: #1B1B1B;
+    --smalltext-color: #8F8F8F;
+    --another-texts: #39393A;
+}
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Component */
+
+.tittle{
+    text-align: center;
+    font-size: var(--tittle);
+    font-weight: 700;
+    padding: 4rem 0 1.5rem 0;
+}
+
+.subtittle{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--subtittle);
+    font-weight: 700;
+    
+    padding: 2rem 1rem;
+}
+
+.list-item{
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+
+    max-width: 90%;
+}
+
+/* Content */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+    background: var(--background-color);
+}
+
+main{
+    background-color: var(--background-recipe);
+    width: 90%;
+    max-width: 900px;
+    margin: 3rem auto 0 auto;
+    border-radius: 0.5rem;
+
+}
+
+.container{
+    padding: 0 2rem;
+}
+
+.wrapper-image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.wrapper-image figcaption{
+    text-align: right;
+
+    font-size: var(--smalltext);
+    color: var(--smalltext-color);
+}
+
+
+
+.additional-information p{
+    padding-bottom: 2rem;
+}
+
+
+/* Footer */
+
+footer{
+    margin: 3rem 0 1rem 0;
+    text-align: center;
+}
+
+footer span{
+    color: var(--smalltext-color);
+    font-size: var(--smalltext);
+}
